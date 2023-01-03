@@ -6,5 +6,5 @@ import (
 
 func main() {
 	config, _ := configs.LoadConfig(".")
-	println(config)
+	println(config.DBDriver)
 }
