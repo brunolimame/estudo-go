@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  go:
+    build:
+      dockerfile: ./.docker/Dockerfile
+      context: .
+    container_name: estudogo
+    ports:
+      - "8000:8000"
+    volumes:
+    - "./:/app"
